@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kanban</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./font-awesome.min.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -15,15 +16,24 @@
       </div>
       <div class="headers">
         <div class="to-do">
-          <h3>to do</h3>
+          <div class="header">
+            <i class="fa fa-list" style="color: red"></i>
+            <h3>to do</h3>
+          </div>
           <span class="counter">0</span>
         </div>
         <div class="in-progress">
-          <h3>in progress</h3>
+          <div class="header">
+            <i class="fa fa-spinner" style="color: rgb(255, 179, 0)"></i>
+            <h3>in progress</h3>
+          </div>
           <span class="counter">0</span>
         </div>
         <div class="done">
-          <h3>done</h3>
+          <div class="header">
+            <i class="fa fa-check" style="color: rgb(3, 188, 37)"></i>
+            <h3>done</h3>
+          </div>
           <span class="counter">0</span>
         </div>
       </div>
