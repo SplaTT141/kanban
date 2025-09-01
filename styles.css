@@ -21,6 +21,41 @@ body {
   width: 800px;
   padding: 1rem;
   background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.add-new {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.add-new input {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(215, 209, 209);
+  width: 250px;
+  font-size: 0.9rem;
+}
+
+.add-new button {
+  background-color: #02ad99;
+  border: none;
+  text-transform: capitalize;
+  padding: 0 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.add-new button:hover {
+  background-color: #04e2c8;
+  transform: scale(1.03);
+  color: #000;
 }
 
 .headers {
@@ -28,6 +63,7 @@ body {
   justify-content: space-between;
   gap: 2rem;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .header {
