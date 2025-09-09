@@ -23,7 +23,7 @@ addBtnDOM.addEventListener('click', () => {
     inputDOM.value = '';
 });
 
-tasksDOM.addEventListener('click', e => {
+toDoTasksDOM.addEventListener('click', e => {
     if (e.target.classList.contains('remove')) {
         e.target.closest('.task').remove();
     }

@@ -129,6 +129,7 @@ body {
 
 .task .text {
   padding: 0.5rem;
+  inline-size: 235px;
   word-wrap: break-word;
 }
 
@@ -170,6 +171,7 @@ body {
   background-color: #fff;
   border: none;
   cursor: pointer;
+  margin-top: 0.5rem;
 }
 
 .edit-block i:hover {
