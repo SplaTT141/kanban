@@ -1,11 +1,11 @@
 const inputDOM = document.getElementById('add-input');
 const addBtnDOM = document.getElementById('add-btn');
-const tasksDOM = document.querySelector('.tasks');
+const toDoTasksDOM = document.querySelector('.to-do-tasks');
 
 addBtnDOM.addEventListener('click', () => {
 
     if (inputDOM.value !== '') {
-        tasksDOM.insertAdjacentHTML('afterbegin', `
+        toDoTasksDOM.insertAdjacentHTML('afterbegin', `
             <div class="task">
                 <p class="text">${inputDOM.value}</p>
                 <div class="edit-block">
@@ -34,7 +34,7 @@ tasksDOM.addEventListener('click', e => {
         task.querySelector('.edit-block').style.display = 'flex';
         const input = task.querySelector('.edit-input');
         input.focus();
-        input.setSelectionRange(input.value.length, input.value.length);
+        input.setSelectionRange(0, input.value.length);
     }
 
     if (e.target.classList.contains('cancel')) {
@@ -48,6 +48,7 @@ tasksDOM.addEventListener('click', e => {
         const newInputValue = task.querySelector('.edit-input').value;
         task.querySelector('.text').textContent = newInputValue;
         task.querySelector('.edit-block').style.display = 'none';
-        task.querySelector('.text').style.display = 'block'
+        task.querySelector('.text').style.display = 'block';
     }
 });
+

@@ -15,29 +15,35 @@
         <button id="add-btn" type="button">add</button>
       </div>
       <div class="headers">
-        <div class="to-do">
-          <div class="header">
-            <i class="fa fa-list" style="color: red"></i>
-            <h3>to do</h3>
+        <section class="to-do-wrapper">
+          <div class="to-do">
+            <div class="header">
+              <i class="fa fa-list" style="color: red"></i>
+              <h3>to do</h3>
+            </div>
+            <span class="counter">0</span>
           </div>
-          <span class="counter">0</span>
-        </div>
-        <div class="in-progress">
-          <div class="header">
-            <i class="fa fa-spinner" style="color: rgb(255, 179, 0)"></i>
-            <h3>in progress</h3>
+          <div class="to-do-tasks"></div>
+        </section>
+        <section class="in-progress-wrapper">
+          <div class="in-progress">
+            <div class="header">
+              <i class="fa fa-spinner" style="color: rgb(255, 179, 0)"></i>
+              <h3>in progress</h3>
+            </div>
+            <span class="counter">0</span>
           </div>
-          <span class="counter">0</span>
-        </div>
-        <div class="done">
-          <div class="header">
-            <i class="fa fa-check" style="color: rgb(3, 188, 37)"></i>
-            <h3>done</h3>
+        </section>
+        <section class="done-wrapper">
+          <div class="done">
+            <div class="header">
+              <i class="fa fa-check" style="color: rgb(3, 188, 37)"></i>
+              <h3>done</h3>
+            </div>
+            <span class="counter">0</span>
           </div>
-          <span class="counter">0</span>
-        </div>
+        </section>
       </div>
-      <div class="tasks"></div>
     </div>
     <script src="./script.js" type="module"></script>
   </body>
