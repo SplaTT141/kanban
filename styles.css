@@ -133,3 +133,28 @@ body {
   scale: 1.05;
   color: #000000;
 }
+
+.edit-block {
+  display: none;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.edit-input {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  outline: none;
+  padding: 0 0.2rem;
+  font-size: 0.9rem;
+}
+
+.edit-block i {
+  margin-right: 5px;
+  font-size: 1.05rem;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-block i:hover {
+  scale: 1.1;
+}
