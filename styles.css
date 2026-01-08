@@ -18,7 +18,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  width: 900px;
+  width: 80%;
   padding: 1rem;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -116,6 +116,15 @@ body {
   border-radius: 6px;
 }
 
+#to-do-tasks,
+#in-progress-tasks,
+#done-tasks {
+  min-height: 100%;
+  width: 100%;
+}
+
+/* TASKS */
+
 .task:first-child {
   margin-top: 1rem;
 }
@@ -125,6 +134,11 @@ body {
   border-radius: 3px;
   border: 1px solid #dadbd9;
   margin-bottom: 0.5rem;
+  transition: all 0.2s;
+}
+
+.task:hover {
+  scale: 1.02;
 }
 
 .task .text {
@@ -176,4 +190,31 @@ body {
 
 .edit-block i:hover {
   scale: 1.1;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+  .headers {
+    flex-direction: column;
+  }
+
+  #to-do-tasks,
+  #in-progress-tasks,
+  #done-tasks {
+    min-height: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .add-new {
+    flex-direction: column;
+  }
+  #add-input {
+    width: 100%;
+  }
+  #add-btn {
+    padding: 0.3rem;
+  }
 }
