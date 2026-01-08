@@ -1,4 +1,4 @@
-# 📋 Notes App
+# 📋 Kanban Task Boards
 
 ## 🌟 About
 
